@@ -1,0 +1,17 @@
+CREATE TABLE users  (
+  id VARCHAR(250) PRIMARY KEY NOT NULL UNIQUE,
+  username VARCHAR(250) NOT NULL UNIQUE,
+  password VARCHAR(250) NOT NULL,
+  name VARCHAR(250) NOT NULL,
+  lastname VARCHAR(250) NOT NULL
+);
+
+CREATE TABLE 'tasks_user' (
+  'id' VARCHAR(250) PRIMARY KEY NOT NULL UNIQUE;
+  'state' VARCHAR(250) NOT NULL;
+  'type_task' VARCHAR(250) NOT NULL;
+  'observations' VARCHAR(250);
+  'time_finish' VARCHAR(250);
+  'date' VARCHAR(250) NOT NULL;
+)
+
