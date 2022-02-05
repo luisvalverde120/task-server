@@ -5,6 +5,7 @@ const { json, urlencoded } = require("body-parser");
 const dotenv = require("dotenv");
 const cors = require("cors");
 const router = require("./routers/index");
+const allowCrossDomain = require("./middlewares/headers");
 
 dotenv.config();
 
@@ -16,6 +17,7 @@ app.use(morgan("dev"));
 app.use(cors());
 app.use(json());
 app.use(urlencoded({ extended: false }));
+app.use(allowCrossDomain);
 
 // routers
 app.use("/api/v1", router);

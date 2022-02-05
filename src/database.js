@@ -1,6 +1,5 @@
-const mysql = require("mysql");
+const mysql = require("mysql2");
 const dotenv = require("dotenv");
-const { promisify } = require("util");
 dotenv.config();
 
 const uri = {
@@ -29,6 +28,6 @@ pool.getConnection((err, connection) => {
   return;
 });
 
-promisify(pool.query);
+const promisePool = pool.promise()
 
-module.exports = pool;
+module.exports = promisePool;

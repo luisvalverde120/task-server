@@ -6,12 +6,16 @@ CREATE TABLE users  (
   lastname VARCHAR(250) NOT NULL
 );
 
-CREATE TABLE 'tasks_user' (
-  'id' VARCHAR(250) PRIMARY KEY NOT NULL UNIQUE;
-  'state' VARCHAR(250) NOT NULL;
-  'type_task' VARCHAR(250) NOT NULL;
-  'observations' VARCHAR(250);
-  'time_finish' VARCHAR(250);
-  'date' VARCHAR(250) NOT NULL;
-)
+CREATE TABLE tasks_user (
+  id VARCHAR(250) PRIMARY KEY NOT NULL,
+  state VARCHAR(250) NOT NULL,
+  type_task VARCHAR(250) NOT NULL,
+  task VARCHAR(250) NOT NULL,
+  user VARCHAR(250) NOT NULL,
+  observations VARCHAR(250),
+  time_finish VARCHAR(250),
+  date VARCHAR(250) NOT NULL,
+  id_user VARCHAR(250) NOT NULL,
+  FOREIGN KEY (id_user) REFERENCES users(id),
+);
 

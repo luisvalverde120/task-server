@@ -1,0 +1,34 @@
+Mantenimiento
+	recarga de cartuchos de impresora
+	recarga de papel impresora
+	autulizacion de computadoras
+	cambio de discos duros
+	actializacion del fireware
+Programacion
+	modificion de microservicios
+	creacion de microservicios
+	modificion en el frontent
+	creacion del backend
+	modificacines en el backend
+	sistemas de compra
+	test de unitarios
+	test de integracion
+	modelado de base de datos
+	creacion de base de datos
+Reparacion
+	areglo de bux del sistema
+	areglo de rendimiento del sistema 
+	areglo de seguridad del sistema
+	areglo de vulneravilidades en la base de datos
+	reparacion de computadoras
+	reparacion de impresora
+Configuracion
+	configuracion de contenedores docker
+	configuracion de red de computadoras
+	configuracion de variables de entorno
+	configuracion de git
+	configuracion de servidores
+Otro
+
+
+
