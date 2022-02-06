@@ -74,24 +74,14 @@ async function register(req, res) {
   });
 
   try {
-    const user = await pool.query("INSERT INTO users VALUES (?, ?, ?, ?, ?)", [
-      id,
-      username,
-      hash,
-      name,
-      lastname,
-    ]);
+    const user = await pool.query(
+      `INSERT INTO users VALUES ('${id}', '${username}', '${hash}', '${name}', '${lastname}')`
+    );
 
     res.setHeader("access=token", token);
 
     return res.json({
       message: "user authenticate successfuly",
-      user: {
-        id,
-        username,
-        name,
-        lastname,
-      },
       token,
     });
   } catch (e) {
