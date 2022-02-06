@@ -135,7 +135,7 @@ async function getTaskByRangeDate(req, res) {
     }
   }
 
-  res.json({ listTask, auxUser });
+  res.json({ listTask, listUsers });
 }
 
 module.exports = {
